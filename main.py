@@ -21,8 +21,8 @@ app = QtWidgets.QApplication([])
 banco =  mysql.connector.connect(
     host='localhost',
     user='root',
-    port='3308',
-    password='Senac',
+    port='3306',
+    password='',
     database='CAT_TREINEE'
 )
     
@@ -129,6 +129,9 @@ def sair_cad_inicial():
 
 #inicial
 def chamar_inicial():
+    inicial.show()
+    login.close()
+
     usuario = login.usuario.text()
     senha = login.senha.text()
 
@@ -1511,9 +1514,9 @@ def cad_cons_func():
 
     cursor = banco.cursor()
     consulta = """SELECT cpf_func, nome_func, nome_mae_func, data_nascimento_func, sexo, estado_civil, remuneracao_func, 
-                  ctps_func, identidade_func, pis_pasep_nit_func, cep_func, endereco_func, bairro_func, estado_func, 
-                  municipio_func, telefone_func, cbo_func, aposentadoria_func, area_func, grau_instrucao_func 
-                  FROM funcionario WHERE cpf_func = %s"""
+                ctps_func, identidade_func, pis_pasep_nit_func, cep_func, endereco_func, bairro_func, estado_func, 
+                municipio_func, telefone_func, cbo_func, aposentadoria_func, area_func, grau_instrucao_func 
+                FROM funcionario WHERE cpf_func = %s"""
     valores = (cpf,)
     cursor.execute(consulta, valores)
 
@@ -1523,8 +1526,8 @@ def cad_cons_func():
     if busca:
         try:
             (cpf_func, nome_func, nome_mae_func, data_nascimento_func, sexo, estado_civil, remuneracao_func, ctps_func,
-             identidade_func, pis_pasep_nit_func, cep_func, endereco_func, bairro_func, estado_func, municipio_func,
-             telefone_func, cbo_func, aposentadoria_func, area_func, grau_instrucao_func) = busca
+            identidade_func, pis_pasep_nit_func, cep_func, endereco_func, bairro_func, estado_func, municipio_func,
+            telefone_func, cbo_func, aposentadoria_func, area_func, grau_instrucao_func) = busca
             
             # Preenchendo os campos de texto
             cat2.campo_cpf.setText(cpf_func)
@@ -1591,8 +1594,8 @@ def cad_cons_empre():
     cursor = banco.cursor()
 
     consulta = """SELECT cnpj_empresa, nome_empresa, tipo_num_doc_empresa, cnae_empresa, cep_empresa, 
-                  endereco_empresa, bairro_empresa, municipio_empresa, estado_empresa, telefone_empresa 
-                  FROM empresa WHERE cnpj_empresa = %s"""
+            endereco_empresa, bairro_empresa, municipio_empresa, estado_empresa, telefone_empresa 
+            FROM empresa WHERE cnpj_empresa = %s"""
     valores = (cnpj,)
     
     cursor.execute(consulta, valores)
@@ -1603,7 +1606,7 @@ def cad_cons_empre():
     if selecao:
         try:
             (cnpj_empresa, nome_empresa, tipo_num_doc_empresa, cnae_empresa, cep_empresa, endereco_empresa,
-             bairro_empresa, municipio_empresa, estado_empresa, telefone_empresa) = selecao
+            bairro_empresa, municipio_empresa, estado_empresa, telefone_empresa) = selecao
 
             # Preenchendo os campos da interface
             cat1.campo_cnpj.setText(cnpj_empresa)
@@ -1754,8 +1757,8 @@ def gerar_pdfs():
     conn = mysql.connector.connect(
         host='localhost',
         user='root',
-        port='3308',
-        password='Senac',
+        port='3306',
+        password='',
         database='CAT_TREINEE'
     )
     cursor = conn.cursor()
@@ -1929,8 +1932,6 @@ consulta.bt_pesquisa.clicked.connect(pesquisa_consulta)
 
 #gerar pdf
 consulta.gerar_pdf.clicked.connect(gerar_pdfs)
-
-
 
 
 login.show()
