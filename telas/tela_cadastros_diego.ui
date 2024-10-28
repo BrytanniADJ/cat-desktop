@@ -1,0 +1,3649 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1250</width>
+    <height>770</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>14</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <widget class="QFrame" name="frame_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>1251</width>
+      <height>768</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>1101</width>
+      <height>600</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QTabWidget" name="tabWidget_2">
+     <property name="geometry">
+      <rect>
+       <x>-10</x>
+       <y>110</y>
+       <width>1261</width>
+       <height>631</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="tab_4">
+      <attribute name="title">
+       <string>FUNCIONÁRIO</string>
+      </attribute>
+      <widget class="QLabel" name="telefone">
+       <property name="geometry">
+        <rect>
+         <x>700</x>
+         <y>310</y>
+         <width>81</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: none;</string>
+       </property>
+       <property name="text">
+        <string>TELEFONE:</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="email">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>350</y>
+         <width>71</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: none;</string>
+       </property>
+       <property name="text">
+        <string>EMAIL:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="bt_excluir_func">
+       <property name="geometry">
+        <rect>
+         <x>470</x>
+         <y>550</y>
+         <width>131</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(107, 179, 255);
+border: none;
+border-radius: 5px;</string>
+       </property>
+       <property name="text">
+        <string>EXCLUIR</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="bt_cadastrar_func">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>550</y>
+         <width>131</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(107, 179, 255);
+border: none;
+border-radius: 5px;</string>
+       </property>
+       <property name="text">
+        <string>CADASTRAR</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="bt_atualizar_func">
+       <property name="geometry">
+        <rect>
+         <x>290</x>
+         <y>550</y>
+         <width>131</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(107, 179, 255);
+border: none;
+border-radius: 5px;</string>
+       </property>
+       <property name="text">
+        <string>ATUALIZAR</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="bt_voltar_func">
+       <property name="geometry">
+        <rect>
+         <x>1010</x>
+         <y>550</y>
+         <width>131</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(107, 179, 255);
+border: none;
+border-radius: 5px;</string>
+       </property>
+       <property name="text">
+        <string>VOLTAR</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="bt_consultar_func">
+       <property name="geometry">
+        <rect>
+         <x>650</x>
+         <y>550</y>
+         <width>131</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(107, 179, 255);
+border: none;
+border-radius: 5px;</string>
+       </property>
+       <property name="text">
+        <string>CONSULTAR</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="bt_limpar_func">
+       <property name="geometry">
+        <rect>
+         <x>830</x>
+         <y>550</y>
+         <width>131</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(107, 179, 255);
+border: none;
+border-radius: 5px;</string>
+       </property>
+       <property name="text">
+        <string>LIMPAR</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="campo_telefone">
+       <property name="geometry">
+        <rect>
+         <x>820</x>
+         <y>310</y>
+         <width>171</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 0.5px solid rgb(211,211,211);
+border-radius: 5px;</string>
+       </property>
+       <property name="inputMask">
+        <string>(99)99999-9999</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="nome_func">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>70</y>
+         <width>71</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: none;</string>
+       </property>
+       <property name="text">
+        <string>NOME:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="campo_email">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>350</y>
+         <width>301</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 0.5px solid rgb(211,211,211);
+border-radius: 5px;</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="campo_nome_func">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>70</y>
+         <width>301</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 0.5px solid rgb(211,211,211);
+border-radius: 5px;</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="nome_da_mae">
+       <property name="geometry">
+        <rect>
+         <x>700</x>
+         <y>70</y>
+         <width>91</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: none;</string>
+       </property>
+       <property name="text">
+        <string>NOME DA MÃE:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="campo_nome_mae">
+       <property name="geometry">
+        <rect>
+         <x>820</x>
+         <y>70</y>
+         <width>301</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 0.5px solid rgb(211,211,211);
+border-radius: 5px;</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="data_de_nasc">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>110</y>
+         <width>141</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: none;</string>
+       </property>
+       <property name="text">
+        <string>DATA DE NASCIMENTO:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="grau_instrucao">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>390</y>
+         <width>131</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: none;</string>
+       </property>
+       <property name="text">
+        <string>GRAU DE INSTRUÇÃO:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="sexo">
+       <property name="geometry">
+        <rect>
+         <x>700</x>
+         <y>190</y>
+         <width>61</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: none;</string>
+       </property>
+       <property name="text">
+        <string>SEXO:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="campo_data_nascimento">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>110</y>
+         <width>131</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 0.5px solid rgb(211,211,211);
+border-radius: 5px;</string>
+       </property>
+       <property name="inputMask">
+        <string>9999/99/99</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="remuneracao">
+       <property name="geometry">
+        <rect>
+         <x>700</x>
+         <y>430</y>
+         <width>101</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: none;</string>
+       </property>
+       <property name="text">
+        <string>REMUNERAÇÃO:</string>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="estado_civil">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>190</y>
+         <width>101</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: none;</string>
+       </property>
+       <property name="text">
+        <string>ESTADO CIVIL:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="ctps">
+       <property name="geometry">
+        <rect>
+         <x>700</x>
+         <y>390</y>
+         <width>61</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: none;</string>
+       </property>
+       <property name="text">
+        <string>CTPS:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="campo_remuneracao">
+       <property name="geometry">
+        <rect>
+         <x>820</x>
+         <y>430</y>
+         <width>141</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 0.5px solid rgb(211,211,211);
+border-radius: 5px;</string>
+       </property>
+       <property name="inputMask">
+        <string/>
+       </property>
+       <property name="text">
+        <string>R$</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="campo_ctps">
+       <property name="geometry">
+        <rect>
+         <x>820</x>
+         <y>390</y>
+         <width>131</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 0.5px solid rgb(211,211,211);
+border-radius: 5px;</string>
+       </property>
+       <property name="inputMask">
+        <string>999.999.999-99</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="identidade">
+       <property name="geometry">
+        <rect>
+         <x>700</x>
+         <y>110</y>
+         <width>81</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: none;</string>
+       </property>
+       <property name="text">
+        <string>IDENTIDADE:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="campo_identidade">
+       <property name="geometry">
+        <rect>
+         <x>820</x>
+         <y>110</y>
+         <width>141</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 0.5px solid rgb(211,211,211);
+border-radius: 5px;</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="pis">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>470</y>
+         <width>91</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: none;</string>
+       </property>
+       <property name="text">
+        <string>PIS/PASEP/NIT:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="campo_pis">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>470</y>
+         <width>171</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 0.5px solid rgb(211,211,211);
+border-radius: 5px;</string>
+       </property>
+       <property name="inputMask">
+        <string>9999999999999-99</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="cbo">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>430</y>
+         <width>41</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: none;</string>
+       </property>
+       <property name="text">
+        <string>CBO:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="campo_cbo">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>430</y>
+         <width>141</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 0.5px solid rgb(211,211,211);
+border-radius: 5px;</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="selec_sexo">
+       <property name="geometry">
+        <rect>
+         <x>820</x>
+         <y>190</y>
+         <width>171</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 0.5px solid rgb(211,211,211);
+border-radius: 5px;</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>MASCULINO</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>FEMININO</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>OUTRO</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QComboBox" name="selec_grau">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>390</y>
+         <width>181</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 0.5px solid rgb(211,211,211);
+border-radius: 5px;</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>EDUCAÇÃO BÁSICA</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>ENSINO MÉDIO</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>GRADUAÇÃO</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>PÓS-GRADUAÇÃO</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QComboBox" name="selec_estado_civil">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>190</y>
+         <width>131</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 0.5px solid rgb(211,211,211);
+border-radius: 5px;</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>SOLTEIRO(A)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>CASADO(A)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>DIVORCIADO(A)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>VIÚVO(A)</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QLabel" name="cod_func">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>30</y>
+         <width>121</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: none;</string>
+       </property>
+       <property name="text">
+        <string>COD FUNCIONÁRIO:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="cod_empre_func">
+       <property name="geometry">
+        <rect>
+         <x>700</x>
+         <y>30</y>
+         <width>91</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="mouseTracking">
+        <bool>false</bool>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: none;</string>
+       </property>
+       <property name="text">
+        <string>COD EMPRESA:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="campo_cod_empre_2">
+       <property name="geometry">
+        <rect>
+         <x>820</x>
+         <y>30</y>
+         <width>71</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 0.5px solid rgb(211,211,211);
+border-radius: 5px;</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="cep">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>230</y>
+         <width>51</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: none;</string>
+       </property>
+       <property name="text">
+        <string>CEP:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="campo_cep">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>230</y>
+         <width>171</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 0.5px solid rgb(211,211,211);
+border-radius: 5px;</string>
+       </property>
+       <property name="inputMask">
+        <string>99999-999</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="endereco">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>310</y>
+         <width>81</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: none;</string>
+       </property>
+       <property name="text">
+        <string>ENDEREÇO:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="campo_endereco">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>310</y>
+         <width>261</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 0.5px solid rgb(211,211,211);
+border-radius: 5px;</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="campo_bairro">
+       <property name="geometry">
+        <rect>
+         <x>820</x>
+         <y>230</y>
+         <width>171</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 0.5px solid rgb(211,211,211);
+border-radius: 5px;</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="bairro">
+       <property name="geometry">
+        <rect>
+         <x>700</x>
+         <y>230</y>
+         <width>81</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: none;</string>
+       </property>
+       <property name="text">
+        <string>BAIRRO:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="estado">
+       <property name="geometry">
+        <rect>
+         <x>700</x>
+         <y>270</y>
+         <width>81</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: none;</string>
+       </property>
+       <property name="text">
+        <string>ESTADO:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="campo_municipio">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>270</y>
+         <width>141</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 0.5px solid rgb(211,211,211);
+border-radius: 5px;</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="municipio">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>270</y>
+         <width>101</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: none;</string>
+       </property>
+       <property name="text">
+        <string>MUNICÍPIO:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="area">
+       <property name="geometry">
+        <rect>
+         <x>700</x>
+         <y>350</y>
+         <width>61</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: none;</string>
+       </property>
+       <property name="text">
+        <string>ÁREA:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="campo_area">
+       <property name="geometry">
+        <rect>
+         <x>820</x>
+         <y>350</y>
+         <width>171</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 0.5px solid rgb(211,211,211);
+border-radius: 5px;</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="cpf">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>150</y>
+         <width>51</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: none;</string>
+       </property>
+       <property name="text">
+        <string>CPF:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="campo_cpf">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>150</y>
+         <width>171</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 0.5px solid rgb(211,211,211);
+border-radius: 5px;</string>
+       </property>
+       <property name="inputMask">
+        <string>999.999.999-99</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="campo_ra">
+       <property name="geometry">
+        <rect>
+         <x>820</x>
+         <y>150</y>
+         <width>141</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 0.5px solid rgb(211,211,211);
+border-radius: 5px;</string>
+       </property>
+       <property name="inputMask">
+        <string>999999</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="ra">
+       <property name="geometry">
+        <rect>
+         <x>700</x>
+         <y>150</y>
+         <width>51</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: none;</string>
+       </property>
+       <property name="text">
+        <string>RA:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="selec_estado">
+       <property name="geometry">
+        <rect>
+         <x>820</x>
+         <y>270</y>
+         <width>131</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 0.5px solid rgb(211,211,211);
+border-radius: 5px;</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>AC</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>AL</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>AP</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>AM</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>BA</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>CE</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>DF</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>ES</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>GO</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>MA</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>MT</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>MS</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>MG</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>PA</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>PB</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>PR</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>PE</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>PI</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>RJ</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>RN</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>RS</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>RO</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>RR</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>SC</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>SP</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>SE</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>TO</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QLabel" name="aposentadoria">
+       <property name="geometry">
+        <rect>
+         <x>700</x>
+         <y>470</y>
+         <width>111</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: none;</string>
+       </property>
+       <property name="text">
+        <string>APOSENTADORIA:</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="campo_cod_funci">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>30</y>
+         <width>71</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 0.5px solid rgb(211,211,211);
+border-radius: 5px;</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="select_apo">
+       <property name="geometry">
+        <rect>
+         <x>820</x>
+         <y>470</y>
+         <width>121</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 0.5px solid rgb(211,211,211);
+border-radius: 5px;</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>SIM</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>NÃO</string>
+        </property>
+       </item>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tab_5">
+      <attribute name="title">
+       <string>EMPRESA</string>
+      </attribute>
+      <widget class="QLabel" name="telefone_empre">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>430</y>
+         <width>71</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: none;</string>
+       </property>
+       <property name="text">
+        <string>TELEFONE:</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="endereco_empre">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>270</y>
+         <width>71</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: none;</string>
+       </property>
+       <property name="text">
+        <string>ENDEREÇO:</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="cod_empre">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>30</y>
+         <width>101</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: none;</string>
+       </property>
+       <property name="text">
+        <string>COD EMPRESA:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="campo_cnpj_empre">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>150</y>
+         <width>191</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 0.5px solid rgb(211,211,211);
+border-radius: 5px;</string>
+       </property>
+       <property name="inputMask">
+        <string>99.999.999/9999-99</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="campo_telefone_empre">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>430</y>
+         <width>191</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 0.5px solid rgb(211,211,211);
+border-radius: 5px;</string>
+       </property>
+       <property name="inputMask">
+        <string>(99)99999-9999</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="nome_empre">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>70</y>
+         <width>51</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: none;</string>
+       </property>
+       <property name="text">
+        <string>NOME:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="campo_endereco_empre">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>270</y>
+         <width>321</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 0.5px solid rgb(211,211,211);
+border-radius: 5px;</string>
+       </property>
+       <property name="inputMask">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="cnpj_empre">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>150</y>
+         <width>41</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: none;</string>
+       </property>
+       <property name="text">
+        <string>CNPJ:</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="campo_nome_empre">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>70</y>
+         <width>321</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 0.5px solid rgb(211,211,211);
+border-radius: 5px;</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="tipo_doc">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>110</y>
+         <width>101</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: none;</string>
+       </property>
+       <property name="text">
+        <string>TIPO/NUM DOC:</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="campo_tipo_doc">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>110</y>
+         <width>191</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 0.5px solid rgb(211,211,211);
+border-radius: 5px;</string>
+       </property>
+       <property name="inputMask">
+        <string>99999999-99</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="cnae">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>190</y>
+         <width>41</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: none;</string>
+       </property>
+       <property name="text">
+        <string>CNAE:</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="campo_cnae">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>190</y>
+         <width>191</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 0.5px solid rgb(211,211,211);
+border-radius: 5px;</string>
+       </property>
+       <property name="inputMask">
+        <string>9999-9/99</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="cep_empre">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>230</y>
+         <width>31</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: none;</string>
+       </property>
+       <property name="text">
+        <string>CEP:</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="campo_cep_empre">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>230</y>
+         <width>191</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 0.5px solid rgb(211,211,211);
+border-radius: 5px;</string>
+       </property>
+       <property name="inputMask">
+        <string>99999-999</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="bairro_empre">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>310</y>
+         <width>61</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: none;</string>
+       </property>
+       <property name="text">
+        <string>BAIRRO:</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="campo_bairro_empre">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>310</y>
+         <width>191</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 0.5px solid rgb(211,211,211);
+border-radius: 5px;</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="estado_empre">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>390</y>
+         <width>61</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: none;</string>
+       </property>
+       <property name="text">
+        <string>ESTADO:</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="municipio_empre">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>350</y>
+         <width>71</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: none;</string>
+       </property>
+       <property name="text">
+        <string>MUNICÍPIO:</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="campo_municipio_empre">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>350</y>
+         <width>321</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 0.5px solid rgb(211,211,211);
+border-radius: 5px;</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="email_empre">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>470</y>
+         <width>51</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: none;</string>
+       </property>
+       <property name="text">
+        <string>EMAIL:</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="campo_email_empre">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>470</y>
+         <width>321</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 0.5px solid rgb(211,211,211);
+border-radius: 5px;</string>
+       </property>
+       <property name="inputMask">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="bt_limpar_empre">
+       <property name="geometry">
+        <rect>
+         <x>830</x>
+         <y>550</y>
+         <width>131</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(107, 179, 255);
+border: none;
+border-radius: 5px;</string>
+       </property>
+       <property name="text">
+        <string>LIMPAR</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="bt_atualizar_empre">
+       <property name="geometry">
+        <rect>
+         <x>290</x>
+         <y>550</y>
+         <width>131</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(107, 179, 255);
+border: none;
+border-radius: 5px;</string>
+       </property>
+       <property name="text">
+        <string>ATUALIZAR</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="bt_voltar_empre">
+       <property name="geometry">
+        <rect>
+         <x>1010</x>
+         <y>550</y>
+         <width>131</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(107, 179, 255);
+border: none;
+border-radius: 5px;</string>
+       </property>
+       <property name="text">
+        <string>VOLTAR</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="bt_cadastrar_empre">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>550</y>
+         <width>131</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(107, 179, 255);
+border: none;
+border-radius: 5px;</string>
+       </property>
+       <property name="text">
+        <string>CADASTRAR</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="bt_excluir_empre">
+       <property name="geometry">
+        <rect>
+         <x>470</x>
+         <y>550</y>
+         <width>131</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(107, 179, 255);
+border: none;
+border-radius: 5px;</string>
+       </property>
+       <property name="text">
+        <string>EXCLUIR</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="bt_consultar_empre">
+       <property name="geometry">
+        <rect>
+         <x>650</x>
+         <y>550</y>
+         <width>131</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(107, 179, 255);
+border: none;
+border-radius: 5px;</string>
+       </property>
+       <property name="text">
+        <string>CONSULTAR</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="selec_estado_empre">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>390</y>
+         <width>191</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 0.5px solid rgb(211,211,211);
+border-radius: 5px;</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>AC</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>AL</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>AP</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>AM</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>BA</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>CE</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>DF</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>ES</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>GO</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>MA</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>MT</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>MS</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>MG</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>PA</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>PB</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>PR</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>PE</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>PI</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>RJ</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>RN</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>RS</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>RO</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>RR</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>SC</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>SP</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>SE</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>TO</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QLineEdit" name="campo_cod_empre">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>30</y>
+         <width>71</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 0.5px solid rgb(211,211,211);
+border-radius: 5px;</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tab_6">
+      <attribute name="title">
+       <string>MÉDICO</string>
+      </attribute>
+      <widget class="QLabel" name="especialidade">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>190</y>
+         <width>101</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>ESPECIALIDADE:</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="email_medico">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>150</y>
+         <width>51</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>EMAIL:</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="cod_medico">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>30</y>
+         <width>91</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>COD MÉDICO:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="campo_cod_medico">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>30</y>
+         <width>71</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 0.5px solid rgb(211,211,211);
+border-radius: 5px;</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="campo_especialidade">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>190</y>
+         <width>231</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 0.5px solid rgb(211,211,211);
+border-radius: 5px;</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="nome_medico">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>70</y>
+         <width>51</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>NOME:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="campo_cpf_medico">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>110</y>
+         <width>141</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 0.5px solid rgb(211,211,211);
+border-radius: 5px;</string>
+       </property>
+       <property name="inputMask">
+        <string>999.999.999-99</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="cpf_medico">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>110</y>
+         <width>31</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>CPF:</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="campo_email_medico">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>150</y>
+         <width>231</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 0.5px solid rgb(211,211,211);
+border-radius: 5px;</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="campo_nome_medico">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>70</y>
+         <width>351</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 0.5px solid rgb(211,211,211);
+border-radius: 5px;</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="crm">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>230</y>
+         <width>41</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>CRM:</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="campo_crm">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>230</y>
+         <width>231</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 0.5px solid rgb(211,211,211);
+border-radius: 5px;</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="bt_limpar_med">
+       <property name="geometry">
+        <rect>
+         <x>830</x>
+         <y>550</y>
+         <width>131</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(107, 179, 255);
+border: none;
+border-radius: 5px;</string>
+       </property>
+       <property name="text">
+        <string>LIMPAR</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="bt_atualizar_med">
+       <property name="geometry">
+        <rect>
+         <x>290</x>
+         <y>550</y>
+         <width>131</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(107, 179, 255);
+border: none;
+border-radius: 5px;</string>
+       </property>
+       <property name="text">
+        <string>ATUALIZAR</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="bt_voltar_med">
+       <property name="geometry">
+        <rect>
+         <x>1010</x>
+         <y>550</y>
+         <width>131</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(107, 179, 255);
+border: none;
+border-radius: 5px;</string>
+       </property>
+       <property name="text">
+        <string>VOLTAR</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="bt_cadastrar_med">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>550</y>
+         <width>131</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(107, 179, 255);
+border: none;
+border-radius: 5px;</string>
+       </property>
+       <property name="text">
+        <string>CADASTRAR</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="bt_excluir_med">
+       <property name="geometry">
+        <rect>
+         <x>470</x>
+         <y>550</y>
+         <width>131</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(107, 179, 255);
+border: none;
+border-radius: 5px;</string>
+       </property>
+       <property name="text">
+        <string>EXCLUIR</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="bt_consultar_med">
+       <property name="geometry">
+        <rect>
+         <x>650</x>
+         <y>550</y>
+         <width>131</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(107, 179, 255);
+border: none;
+border-radius: 5px;</string>
+       </property>
+       <property name="text">
+        <string>CONSULTAR</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tab">
+      <attribute name="title">
+       <string>CID</string>
+      </attribute>
+      <widget class="QLabel" name="cod_cid">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>30</y>
+         <width>61</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: none;</string>
+       </property>
+       <property name="text">
+        <string>COD CID:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="campo_cod_cid">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>30</y>
+         <width>141</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 0.5px solid rgb(211,211,211);
+border-radius: 5px;</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="descricao_cid">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>70</y>
+         <width>81</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: none;</string>
+       </property>
+       <property name="text">
+        <string>DESCRIÇÃO:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QPlainTextEdit" name="campo_descricao_cid">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>70</y>
+         <width>461</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 0.5px solid rgb(211,211,211);
+border-radius: 5px;</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="bt_cadastrar_cid">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>550</y>
+         <width>131</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(107, 179, 255);
+border: none;
+border-radius: 5px;</string>
+       </property>
+       <property name="text">
+        <string>CADASTRAR</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="bt_atualizar_cid">
+       <property name="geometry">
+        <rect>
+         <x>290</x>
+         <y>550</y>
+         <width>131</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(107, 179, 255);
+border: none;
+border-radius: 5px;</string>
+       </property>
+       <property name="text">
+        <string>ATUALIZAR</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="bt_excluir_cid">
+       <property name="geometry">
+        <rect>
+         <x>470</x>
+         <y>550</y>
+         <width>131</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(107, 179, 255);
+border: none;
+border-radius: 5px;</string>
+       </property>
+       <property name="text">
+        <string>EXCLUIR</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="bt_consultar_cid">
+       <property name="geometry">
+        <rect>
+         <x>650</x>
+         <y>550</y>
+         <width>131</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(107, 179, 255);
+border: none;
+border-radius: 5px;</string>
+       </property>
+       <property name="text">
+        <string>CONSULTAR</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="bt_limpar_cid">
+       <property name="geometry">
+        <rect>
+         <x>830</x>
+         <y>550</y>
+         <width>131</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(107, 179, 255);
+border: none;
+border-radius: 5px;</string>
+       </property>
+       <property name="text">
+        <string>LIMPAR</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="bt_voltar_cid">
+       <property name="geometry">
+        <rect>
+         <x>1010</x>
+         <y>550</y>
+         <width>131</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(107, 179, 255);
+border: none;
+border-radius: 5px;</string>
+       </property>
+       <property name="text">
+        <string>VOLTAR</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tab_2">
+      <attribute name="title">
+       <string>TIPO DE LESÃO</string>
+      </attribute>
+      <widget class="QLabel" name="descricao_lesao">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>70</y>
+         <width>101</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: none;</string>
+       </property>
+       <property name="text">
+        <string>DESCRIÇÃO:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QPlainTextEdit" name="campo_descricao_lesao">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>70</y>
+         <width>461</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 0.5px solid rgb(211,211,211);
+border-radius: 5px;</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="cod_lesao">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>30</y>
+         <width>101</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: none;</string>
+       </property>
+       <property name="text">
+        <string>COD LESÃO:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="campo_cod_lesao">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>30</y>
+         <width>141</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 0.5px solid rgb(211,211,211);
+border-radius: 5px;</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="bt_cadastrar_lesao">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>550</y>
+         <width>131</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(107, 179, 255);
+border: none;
+border-radius: 5px;</string>
+       </property>
+       <property name="text">
+        <string>CADASTRAR</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="bt_atualizar_lesao">
+       <property name="geometry">
+        <rect>
+         <x>290</x>
+         <y>550</y>
+         <width>131</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(107, 179, 255);
+border: none;
+border-radius: 5px;</string>
+       </property>
+       <property name="text">
+        <string>ATUALIZAR</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="bt_excluir_lesao">
+       <property name="geometry">
+        <rect>
+         <x>470</x>
+         <y>550</y>
+         <width>131</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(107, 179, 255);
+border: none;
+border-radius: 5px;</string>
+       </property>
+       <property name="text">
+        <string>EXCLUIR</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="bt_consultar_lesao">
+       <property name="geometry">
+        <rect>
+         <x>650</x>
+         <y>550</y>
+         <width>131</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(107, 179, 255);
+border: none;
+border-radius: 5px;</string>
+       </property>
+       <property name="text">
+        <string>CONSULTAR</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="bt_limpar_lesao">
+       <property name="geometry">
+        <rect>
+         <x>830</x>
+         <y>550</y>
+         <width>131</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(107, 179, 255);
+border: none;
+border-radius: 5px;</string>
+       </property>
+       <property name="text">
+        <string>LIMPAR</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="bt_voltar_lesao">
+       <property name="geometry">
+        <rect>
+         <x>1010</x>
+         <y>550</y>
+         <width>131</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(107, 179, 255);
+border: none;
+border-radius: 5px;</string>
+       </property>
+       <property name="text">
+        <string>VOLTAR</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tab_3">
+      <attribute name="title">
+       <string>AGENTE CAUSADOR</string>
+      </attribute>
+      <widget class="QLabel" name="cod_agente">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>30</y>
+         <width>91</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: none;</string>
+       </property>
+       <property name="text">
+        <string>COD AGENTE:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="campo_cod_agente">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>30</y>
+         <width>71</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 0.5px solid rgb(211,211,211);
+border-radius: 5px;</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="descricao_agente">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>120</y>
+         <width>81</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: none;</string>
+       </property>
+       <property name="text">
+        <string>DESCRIÇÃO:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QPlainTextEdit" name="campo_descricao_agen">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>120</y>
+         <width>461</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 0.5px solid rgb(211,211,211);
+border-radius: 5px;</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="bt_cadastrar_agen">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>550</y>
+         <width>131</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(107, 179, 255);
+border: none;
+border-radius: 5px;</string>
+       </property>
+       <property name="text">
+        <string>CADASTRAR</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="bt_atualizar_agen">
+       <property name="geometry">
+        <rect>
+         <x>290</x>
+         <y>550</y>
+         <width>131</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(107, 179, 255);
+border: none;
+border-radius: 5px;</string>
+       </property>
+       <property name="text">
+        <string>ATUALIZAR</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="bt_excluir_agen">
+       <property name="geometry">
+        <rect>
+         <x>470</x>
+         <y>550</y>
+         <width>131</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(107, 179, 255);
+border: none;
+border-radius: 5px;</string>
+       </property>
+       <property name="text">
+        <string>EXCLUIR</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="bt_consultar_agen">
+       <property name="geometry">
+        <rect>
+         <x>650</x>
+         <y>550</y>
+         <width>131</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(107, 179, 255);
+border: none;
+border-radius: 5px;</string>
+       </property>
+       <property name="text">
+        <string>CONSULTAR</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="bt_limpar_agen">
+       <property name="geometry">
+        <rect>
+         <x>830</x>
+         <y>550</y>
+         <width>131</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(107, 179, 255);
+border: none;
+border-radius: 5px;</string>
+       </property>
+       <property name="text">
+        <string>LIMPAR</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="bt_voltar_agen">
+       <property name="geometry">
+        <rect>
+         <x>1010</x>
+         <y>550</y>
+         <width>131</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(107, 179, 255);
+border: none;
+border-radius: 5px;</string>
+       </property>
+       <property name="text">
+        <string>VOLTAR</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="nome_agente">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>70</y>
+         <width>111</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: none;</string>
+       </property>
+       <property name="text">
+        <string>NOME DO AGENTE:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QPlainTextEdit" name="campo_nome_agen">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>70</y>
+         <width>461</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 0.5px solid rgb(211,211,211);
+border-radius: 5px;</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QFrame" name="frame_4">
+     <property name="geometry">
+      <rect>
+       <x>-10</x>
+       <y>0</y>
+       <width>1261</width>
+       <height>111</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>-20</y>
+        <width>131</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">image: url(:/image/CAt.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>Imagens/sem fund.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>540</x>
+        <y>30</y>
+        <width>241</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>28</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(107, 179, 255);</string>
+      </property>
+      <property name="text">
+       <string>CADASTROS</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>-20</y>
+        <width>141</width>
+        <height>141</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/logo/ProSafe-removebg-preview.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>Imagens/ProSafe-removebg-preview.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1250</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <tabstops>
+  <tabstop>tabWidget_2</tabstop>
+  <tabstop>campo_cod_funci</tabstop>
+  <tabstop>campo_cod_empre_2</tabstop>
+  <tabstop>campo_nome_func</tabstop>
+  <tabstop>campo_nome_mae</tabstop>
+  <tabstop>campo_data_nascimento</tabstop>
+  <tabstop>campo_identidade</tabstop>
+  <tabstop>campo_cpf</tabstop>
+  <tabstop>campo_ra</tabstop>
+  <tabstop>selec_estado_civil</tabstop>
+  <tabstop>selec_sexo</tabstop>
+  <tabstop>campo_cep</tabstop>
+  <tabstop>campo_bairro</tabstop>
+  <tabstop>campo_municipio</tabstop>
+  <tabstop>selec_estado</tabstop>
+  <tabstop>campo_endereco</tabstop>
+  <tabstop>campo_telefone</tabstop>
+  <tabstop>campo_email</tabstop>
+  <tabstop>campo_area</tabstop>
+  <tabstop>selec_grau</tabstop>
+  <tabstop>campo_ctps</tabstop>
+  <tabstop>campo_cbo</tabstop>
+  <tabstop>campo_remuneracao</tabstop>
+  <tabstop>campo_pis</tabstop>
+  <tabstop>select_apo</tabstop>
+  <tabstop>campo_cod_empre</tabstop>
+  <tabstop>campo_nome_empre</tabstop>
+  <tabstop>campo_tipo_doc</tabstop>
+  <tabstop>campo_cnpj_empre</tabstop>
+  <tabstop>campo_cnae</tabstop>
+  <tabstop>campo_cep_empre</tabstop>
+  <tabstop>campo_endereco_empre</tabstop>
+  <tabstop>campo_bairro_empre</tabstop>
+  <tabstop>campo_municipio_empre</tabstop>
+  <tabstop>selec_estado_empre</tabstop>
+  <tabstop>campo_telefone_empre</tabstop>
+  <tabstop>campo_email_empre</tabstop>
+  <tabstop>campo_cod_medico</tabstop>
+  <tabstop>campo_nome_medico</tabstop>
+  <tabstop>campo_cpf_medico</tabstop>
+  <tabstop>campo_email_medico</tabstop>
+  <tabstop>campo_especialidade</tabstop>
+  <tabstop>campo_crm</tabstop>
+  <tabstop>campo_cod_cid</tabstop>
+  <tabstop>campo_descricao_cid</tabstop>
+  <tabstop>campo_cod_lesao</tabstop>
+  <tabstop>campo_descricao_lesao</tabstop>
+  <tabstop>campo_cod_agente</tabstop>
+  <tabstop>campo_nome_agen</tabstop>
+  <tabstop>campo_descricao_agen</tabstop>
+  <tabstop>bt_cadastrar_agen</tabstop>
+  <tabstop>bt_atualizar_agen</tabstop>
+  <tabstop>bt_excluir_agen</tabstop>
+  <tabstop>bt_consultar_agen</tabstop>
+  <tabstop>bt_limpar_agen</tabstop>
+  <tabstop>bt_voltar_agen</tabstop>
+  <tabstop>bt_excluir_med</tabstop>
+  <tabstop>bt_consultar_med</tabstop>
+  <tabstop>bt_limpar_med</tabstop>
+  <tabstop>bt_voltar_med</tabstop>
+  <tabstop>bt_atualizar_empre</tabstop>
+  <tabstop>bt_excluir_empre</tabstop>
+  <tabstop>bt_cadastrar_cid</tabstop>
+  <tabstop>bt_atualizar_cid</tabstop>
+  <tabstop>bt_excluir_cid</tabstop>
+  <tabstop>bt_consultar_cid</tabstop>
+  <tabstop>bt_limpar_cid</tabstop>
+  <tabstop>bt_voltar_cid</tabstop>
+  <tabstop>bt_consultar_empre</tabstop>
+  <tabstop>bt_limpar_empre</tabstop>
+  <tabstop>bt_cadastrar_lesao</tabstop>
+  <tabstop>bt_atualizar_lesao</tabstop>
+  <tabstop>bt_excluir_lesao</tabstop>
+  <tabstop>bt_consultar_lesao</tabstop>
+  <tabstop>bt_limpar_lesao</tabstop>
+  <tabstop>bt_voltar_lesao</tabstop>
+  <tabstop>bt_voltar_empre</tabstop>
+  <tabstop>bt_consultar_func</tabstop>
+  <tabstop>bt_limpar_func</tabstop>
+  <tabstop>bt_voltar_func</tabstop>
+  <tabstop>bt_atualizar_func</tabstop>
+  <tabstop>bt_excluir_func</tabstop>
+  <tabstop>bt_cadastrar_empre</tabstop>
+  <tabstop>bt_cadastrar_med</tabstop>
+  <tabstop>bt_atualizar_med</tabstop>
+  <tabstop>bt_cadastrar_func</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

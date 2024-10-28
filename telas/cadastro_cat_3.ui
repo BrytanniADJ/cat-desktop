@@ -1,0 +1,1062 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1251</width>
+    <height>763</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="data_acidente">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>190</y>
+      <width>121</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>DATA DO ACIDENTE:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="horas_trabalhadas">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>230</y>
+      <width>141</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>HORAS TRABALHADAS:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="afastamento">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>270</y>
+      <width>161</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>HOUVE AFASTAMENTO?</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="local_acidente">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>310</y>
+      <width>131</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>LOCAL DO ACIDENTE:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="esp_local">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>310</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>ESP. LOCAL:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="cnpj_cgc">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>350</y>
+      <width>171</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>CNPJ/CGC OU CEI 
+DA PRESTADORA:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="municipio">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>390</y>
+      <width>151</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>MUNICÍPIO DO ACIDENTE:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="part_corpo">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>430</y>
+      <width>111</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>PARTE DO CORPO:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="agente_causa">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>430</y>
+      <width>121</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>AGENTE CAUSADOR:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="geradora">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>470</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>SIT.GERADORA:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="morte">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>470</y>
+      <width>51</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>MORTE:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="hora_acidente">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>190</y>
+      <width>131</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>HORA DO ACIDENTE:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lesao">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>230</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>TIPO DE LESÂO:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="policia">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>270</y>
+      <width>91</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>REG.POLICIAL:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="uf">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>350</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>UF DO ACIDENTE:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="ult_dia_trab">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>390</y>
+      <width>161</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>ÚLTIMO DIA DE TRABALHO: </string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_19">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>510</y>
+      <width>101</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>DATA DE ÓBITO:</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="bt_anterior">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>630</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(107, 179, 255);
+border: none;
+border-radius: 5px;</string>
+    </property>
+    <property name="text">
+     <string>ANTERIOR</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="bt_proximo">
+    <property name="geometry">
+     <rect>
+      <x>1070</x>
+      <y>630</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(107, 179, 255);
+border: none;
+border-radius: 5px;</string>
+    </property>
+    <property name="text">
+     <string>PRÓXIMO</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="selec_afastamento">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>270</y>
+      <width>131</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 0.5px solid rgb(211,211,211);
+border-radius: 5px;</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>SIM</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>NÃO</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLineEdit" name="campo_local">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>310</y>
+      <width>261</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 0.5px solid rgb(211,211,211);
+border-radius: 5px;</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="campo_horasT">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>230</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 0.5px solid rgb(211,211,211);
+border-radius: 5px;</string>
+    </property>
+    <property name="inputMask">
+     <string>99:99</string>
+    </property>
+    <property name="text">
+     <string>:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="campo_esplocal">
+    <property name="geometry">
+     <rect>
+      <x>910</x>
+      <y>310</y>
+      <width>261</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 0.5px solid rgb(211,211,211);
+border-radius: 5px;</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="campo_prestadora">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>350</y>
+      <width>141</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 0.5px solid rgb(211,211,211);
+border-radius: 5px;</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="campo_municipio">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>390</y>
+      <width>261</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 0.5px solid rgb(211,211,211);
+border-radius: 5px;</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="campo_pcorpo">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>430</y>
+      <width>261</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 0.5px solid rgb(211,211,211);
+border-radius: 5px;</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="campo_causador">
+    <property name="geometry">
+     <rect>
+      <x>910</x>
+      <y>430</y>
+      <width>261</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 0.5px solid rgb(211,211,211);
+border-radius: 5px;</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="campo_geradora">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>470</y>
+      <width>141</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 0.5px solid rgb(211,211,211);
+border-radius: 5px;</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="selec_obito">
+    <property name="geometry">
+     <rect>
+      <x>910</x>
+      <y>470</y>
+      <width>151</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 0.5px solid rgb(211,211,211);
+border-radius: 5px;</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>SIM</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>NÃO</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLineEdit" name="campo_acidentehr">
+    <property name="geometry">
+     <rect>
+      <x>910</x>
+      <y>190</y>
+      <width>151</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 0.5px solid rgb(211,211,211);
+border-radius: 5px;</string>
+    </property>
+    <property name="inputMask">
+     <string>99:99</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="campo_tipo">
+    <property name="geometry">
+     <rect>
+      <x>910</x>
+      <y>230</y>
+      <width>261</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 0.5px solid rgb(211,211,211);
+border-radius: 5px;</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="campo_dia_trab">
+    <property name="geometry">
+     <rect>
+      <x>910</x>
+      <y>390</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 0.5px solid rgb(211,211,211);
+border-radius: 5px;</string>
+    </property>
+    <property name="inputMask">
+     <string>9999/99/99</string>
+    </property>
+    <property name="text">
+     <string>//</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="campo_dt_obito">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>510</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 0.5px solid rgb(211,211,211);
+border-radius: 5px;</string>
+    </property>
+    <property name="inputMask">
+     <string>9999/99/99</string>
+    </property>
+    <property name="text">
+     <string>//</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="campo_data_aci">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>190</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 0.5px solid rgb(211,211,211);
+border-radius: 5px;</string>
+    </property>
+    <property name="inputMask">
+     <string>9999/99/99</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="info_medico">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>120</y>
+      <width>1251</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(107, 179, 255);
+color: rgb(0, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>      Informações do Acidente</string>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame_4">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1251</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="titulo">
+     <property name="geometry">
+      <rect>
+       <x>610</x>
+       <y>30</y>
+       <width>81</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>28</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(107, 179, 255);</string>
+     </property>
+     <property name="text">
+      <string>CAT</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>-20</y>
+       <width>141</width>
+       <height>141</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image: url(:/logo/ProSafe-removebg-preview.png);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>Imagens/ProSafe-removebg-preview.png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="info_medico_3">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>680</y>
+      <width>1151</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="sizeIncrement">
+     <size>
+      <width>15</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="lineWidth">
+     <number>1</number>
+    </property>
+    <property name="text">
+     <string> DESENVOLVIDO POR: Bianca Araujo Coelho, Caique Romulo Araujo de Jesus, Diego Mendes Cunha, Diego Santos Luiz, Lucas Bernardo RIbeiro Siqueira, Maria Clara Damasceno Serro, Maria Eduarda Fernandes Costa, Móises Habacuque Gomes Pereira, Poliana Santiago Souza</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="selec_policia">
+    <property name="geometry">
+     <rect>
+      <x>910</x>
+      <y>270</y>
+      <width>151</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 0.5px solid rgb(211,211,211);
+border-radius: 5px;</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>SIM</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>NÃO</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QComboBox" name="selec_estado">
+    <property name="geometry">
+     <rect>
+      <x>910</x>
+      <y>350</y>
+      <width>171</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 0.5px solid rgb(211,211,211);
+border-radius: 5px;</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>AC</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>AL</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>AP</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>AM</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>BA</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>CE</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>DF</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>ES</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>GO</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>MA</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>MT</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>MS</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>MG</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>PA</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>PB</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>PR</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>PE</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>PI</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>RJ</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>RN</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>RS</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>RO</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>RR</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>SC</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>SP</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>SE</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>TO</string>
+     </property>
+    </item>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1251</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <tabstops>
+  <tabstop>campo_data_aci</tabstop>
+  <tabstop>campo_acidentehr</tabstop>
+  <tabstop>campo_horasT</tabstop>
+  <tabstop>campo_tipo</tabstop>
+  <tabstop>selec_afastamento</tabstop>
+  <tabstop>selec_policia</tabstop>
+  <tabstop>campo_local</tabstop>
+  <tabstop>campo_esplocal</tabstop>
+  <tabstop>campo_prestadora</tabstop>
+  <tabstop>selec_estado</tabstop>
+  <tabstop>campo_municipio</tabstop>
+  <tabstop>campo_dia_trab</tabstop>
+  <tabstop>campo_pcorpo</tabstop>
+  <tabstop>campo_causador</tabstop>
+  <tabstop>campo_geradora</tabstop>
+  <tabstop>selec_obito</tabstop>
+  <tabstop>campo_dt_obito</tabstop>
+  <tabstop>bt_anterior</tabstop>
+  <tabstop>bt_proximo</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

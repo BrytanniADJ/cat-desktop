@@ -1,0 +1,1577 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1260</width>
+    <height>780</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>14</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <widget class="QFrame" name="frame_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>1251</width>
+      <height>768</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>1101</width>
+      <height>600</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QTabWidget" name="tabWidget_2">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>110</y>
+       <width>1251</width>
+       <height>631</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="tab_4">
+      <attribute name="title">
+       <string>FUNCIONÁRIO</string>
+      </attribute>
+      <widget class="QLabel" name="telefone">
+       <property name="geometry">
+        <rect>
+         <x>700</x>
+         <y>310</y>
+         <width>81</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: none;</string>
+       </property>
+       <property name="text">
+        <string>TELEFONE:</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="email">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>350</y>
+         <width>71</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: none;</string>
+       </property>
+       <property name="text">
+        <string>EMAIL:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="bt_cadastrar_func">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>550</y>
+         <width>131</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(107, 179, 255);
+border: none;
+border-radius: 5px;</string>
+       </property>
+       <property name="text">
+        <string>CADASTRAR</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="bt_voltar_func">
+       <property name="geometry">
+        <rect>
+         <x>1010</x>
+         <y>550</y>
+         <width>131</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(107, 179, 255);
+border: none;
+border-radius: 5px;</string>
+       </property>
+       <property name="text">
+        <string>VOLTAR</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="campo_telefone">
+       <property name="geometry">
+        <rect>
+         <x>820</x>
+         <y>310</y>
+         <width>171</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 0.5px solid rgb(211,211,211);
+border-radius: 5px;</string>
+       </property>
+       <property name="inputMask">
+        <string>(99)99999-9999</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="nome_func">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>70</y>
+         <width>71</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: none;</string>
+       </property>
+       <property name="text">
+        <string>NOME:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="campo_email">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>350</y>
+         <width>301</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 0.5px solid rgb(211,211,211);
+border-radius: 5px;</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="campo_nome_func">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>70</y>
+         <width>301</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 0.5px solid rgb(211,211,211);
+border-radius: 5px;</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="nome_da_mae">
+       <property name="geometry">
+        <rect>
+         <x>700</x>
+         <y>70</y>
+         <width>91</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: none;</string>
+       </property>
+       <property name="text">
+        <string>NOME DA MÃE:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="campo_nome_mae">
+       <property name="geometry">
+        <rect>
+         <x>820</x>
+         <y>70</y>
+         <width>301</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 0.5px solid rgb(211,211,211);
+border-radius: 5px;</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="data_de_nasc">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>110</y>
+         <width>141</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: none;</string>
+       </property>
+       <property name="text">
+        <string>DATA DE NASCIMENTO:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="grau_instrucao">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>390</y>
+         <width>131</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: none;</string>
+       </property>
+       <property name="text">
+        <string>GRAU DE INSTRUÇÃO:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="sexo">
+       <property name="geometry">
+        <rect>
+         <x>700</x>
+         <y>190</y>
+         <width>61</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: none;</string>
+       </property>
+       <property name="text">
+        <string>SEXO:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="campo_data_nascimento">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>110</y>
+         <width>131</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 0.5px solid rgb(211,211,211);
+border-radius: 5px;</string>
+       </property>
+       <property name="inputMask">
+        <string>9999/99/99</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="remuneracao">
+       <property name="geometry">
+        <rect>
+         <x>700</x>
+         <y>430</y>
+         <width>101</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: none;</string>
+       </property>
+       <property name="text">
+        <string>REMUNERAÇÃO:</string>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="estado_civil">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>190</y>
+         <width>101</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: none;</string>
+       </property>
+       <property name="text">
+        <string>ESTADO CIVIL:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="ctps">
+       <property name="geometry">
+        <rect>
+         <x>700</x>
+         <y>390</y>
+         <width>61</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: none;</string>
+       </property>
+       <property name="text">
+        <string>CTPS:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="campo_remuneracao">
+       <property name="geometry">
+        <rect>
+         <x>820</x>
+         <y>430</y>
+         <width>141</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 0.5px solid rgb(211,211,211);
+border-radius: 5px;</string>
+       </property>
+       <property name="text">
+        <string>R$</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="campo_ctps">
+       <property name="geometry">
+        <rect>
+         <x>820</x>
+         <y>390</y>
+         <width>131</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 0.5px solid rgb(211,211,211);
+border-radius: 5px;</string>
+       </property>
+       <property name="inputMask">
+        <string>999.999.999-99</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="identidade">
+       <property name="geometry">
+        <rect>
+         <x>700</x>
+         <y>110</y>
+         <width>81</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: none;</string>
+       </property>
+       <property name="text">
+        <string>IDENTIDADE:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="campo_identidade">
+       <property name="geometry">
+        <rect>
+         <x>820</x>
+         <y>110</y>
+         <width>141</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 0.5px solid rgb(211,211,211);
+border-radius: 5px;</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="pis">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>470</y>
+         <width>91</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: none;</string>
+       </property>
+       <property name="text">
+        <string>PIS/PASEP/NIT:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="campo_pis">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>470</y>
+         <width>171</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 0.5px solid rgb(211,211,211);
+border-radius: 5px;</string>
+       </property>
+       <property name="inputMask">
+        <string>9999999999999-99</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="cbo">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>430</y>
+         <width>41</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: none;</string>
+       </property>
+       <property name="text">
+        <string>CBO:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="campo_cbo">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>430</y>
+         <width>141</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 0.5px solid rgb(211,211,211);
+border-radius: 5px;</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="selec_sexo">
+       <property name="geometry">
+        <rect>
+         <x>820</x>
+         <y>190</y>
+         <width>171</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 0.5px solid rgb(211,211,211);
+border-radius: 5px;</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>MASCULINO</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>FEMININO</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>OUTRO</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QComboBox" name="selec_grau">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>390</y>
+         <width>181</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 0.5px solid rgb(211,211,211);
+border-radius: 5px;</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>EDUCAÇÃO BÁSICA</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>ENSINO MÉDIO</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>GRADUAÇÃO</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>PÓS-GRADUAÇÃO</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QComboBox" name="selec_estado_civil">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>190</y>
+         <width>131</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 0.5px solid rgb(211,211,211);
+border-radius: 5px;</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>SOLTEIRO(A)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>CASADO(A)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>DIVORCIADO(A)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>VIÚVO(A)</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QLabel" name="cod_func">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>30</y>
+         <width>121</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: none;</string>
+       </property>
+       <property name="text">
+        <string>COD FUNCIONÁRIO:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="cod_empre_func">
+       <property name="geometry">
+        <rect>
+         <x>700</x>
+         <y>30</y>
+         <width>91</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="mouseTracking">
+        <bool>false</bool>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: none;</string>
+       </property>
+       <property name="text">
+        <string>COD EMPRESA:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="campo_cod_empre_2">
+       <property name="geometry">
+        <rect>
+         <x>820</x>
+         <y>30</y>
+         <width>71</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 0.5px solid rgb(211,211,211);
+border-radius: 5px;</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="cep">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>230</y>
+         <width>51</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: none;</string>
+       </property>
+       <property name="text">
+        <string>CEP:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="campo_cep">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>230</y>
+         <width>171</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 0.5px solid rgb(211,211,211);
+border-radius: 5px;</string>
+       </property>
+       <property name="inputMask">
+        <string>99999-999</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="endereco">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>310</y>
+         <width>81</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: none;</string>
+       </property>
+       <property name="text">
+        <string>ENDEREÇO:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="campo_endereco">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>310</y>
+         <width>261</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 0.5px solid rgb(211,211,211);
+border-radius: 5px;</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="campo_bairro">
+       <property name="geometry">
+        <rect>
+         <x>820</x>
+         <y>230</y>
+         <width>171</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 0.5px solid rgb(211,211,211);
+border-radius: 5px;</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="bairro">
+       <property name="geometry">
+        <rect>
+         <x>700</x>
+         <y>230</y>
+         <width>81</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: none;</string>
+       </property>
+       <property name="text">
+        <string>BAIRRO:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="estado">
+       <property name="geometry">
+        <rect>
+         <x>700</x>
+         <y>270</y>
+         <width>81</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: none;</string>
+       </property>
+       <property name="text">
+        <string>ESTADO:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="campo_municipio">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>270</y>
+         <width>141</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 0.5px solid rgb(211,211,211);
+border-radius: 5px;</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="municipio">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>270</y>
+         <width>101</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: none;</string>
+       </property>
+       <property name="text">
+        <string>MUNICÍPIO:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="area">
+       <property name="geometry">
+        <rect>
+         <x>700</x>
+         <y>350</y>
+         <width>61</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: none;</string>
+       </property>
+       <property name="text">
+        <string>ÁREA:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="campo_area">
+       <property name="geometry">
+        <rect>
+         <x>820</x>
+         <y>350</y>
+         <width>171</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 0.5px solid rgb(211,211,211);
+border-radius: 5px;</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="cpf">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>150</y>
+         <width>51</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: none;</string>
+       </property>
+       <property name="text">
+        <string>CPF:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="campo_cpf">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>150</y>
+         <width>171</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 0.5px solid rgb(211,211,211);
+border-radius: 5px;</string>
+       </property>
+       <property name="inputMask">
+        <string>999.999.999-99</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="campo_ra">
+       <property name="geometry">
+        <rect>
+         <x>820</x>
+         <y>150</y>
+         <width>141</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 0.5px solid rgb(211,211,211);
+border-radius: 5px;</string>
+       </property>
+       <property name="inputMask">
+        <string>999999</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="ra">
+       <property name="geometry">
+        <rect>
+         <x>700</x>
+         <y>150</y>
+         <width>51</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: none;</string>
+       </property>
+       <property name="text">
+        <string>RA:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="selec_estado">
+       <property name="geometry">
+        <rect>
+         <x>820</x>
+         <y>270</y>
+         <width>131</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 0.5px solid rgb(211,211,211);
+border-radius: 5px;</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>AC</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>AL</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>AP</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>AM</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>BA</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>CE</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>DF</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>ES</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>GO</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>MA</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>MT</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>MS</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>MG</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>PA</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>PB</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>PR</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>PE</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>PI</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>RJ</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>RN</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>RS</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>RO</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>RR</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>SC</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>SP</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>SE</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>TO</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QLabel" name="aposentadoria">
+       <property name="geometry">
+        <rect>
+         <x>700</x>
+         <y>470</y>
+         <width>111</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: none;</string>
+       </property>
+       <property name="text">
+        <string>APOSENTADORIA:</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="campo_cod_funci">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>30</y>
+         <width>71</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 0.5px solid rgb(211,211,211);
+border-radius: 5px;</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="select_apo">
+       <property name="geometry">
+        <rect>
+         <x>820</x>
+         <y>470</y>
+         <width>121</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 0.5px solid rgb(211,211,211);
+border-radius: 5px;</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>SIM</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>NÃO</string>
+        </property>
+       </item>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QFrame" name="frame_4">
+     <property name="geometry">
+      <rect>
+       <x>-10</x>
+       <y>0</y>
+       <width>1261</width>
+       <height>111</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>540</x>
+        <y>30</y>
+        <width>241</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>28</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(107, 179, 255);</string>
+      </property>
+      <property name="text">
+       <string>CADASTROS</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>-20</y>
+        <width>141</width>
+        <height>141</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/logo/ProSafe-removebg-preview.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>Imagens/ProSafe-removebg-preview.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1260</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <tabstops>
+  <tabstop>tabWidget_2</tabstop>
+  <tabstop>campo_cod_funci</tabstop>
+  <tabstop>campo_cod_empre_2</tabstop>
+  <tabstop>campo_nome_func</tabstop>
+  <tabstop>campo_nome_mae</tabstop>
+  <tabstop>campo_data_nascimento</tabstop>
+  <tabstop>campo_identidade</tabstop>
+  <tabstop>campo_cpf</tabstop>
+  <tabstop>campo_ra</tabstop>
+  <tabstop>selec_estado_civil</tabstop>
+  <tabstop>selec_sexo</tabstop>
+  <tabstop>campo_cep</tabstop>
+  <tabstop>campo_bairro</tabstop>
+  <tabstop>campo_municipio</tabstop>
+  <tabstop>selec_estado</tabstop>
+  <tabstop>campo_endereco</tabstop>
+  <tabstop>campo_telefone</tabstop>
+  <tabstop>campo_email</tabstop>
+  <tabstop>campo_area</tabstop>
+  <tabstop>selec_grau</tabstop>
+  <tabstop>campo_ctps</tabstop>
+  <tabstop>campo_cbo</tabstop>
+  <tabstop>campo_remuneracao</tabstop>
+  <tabstop>campo_pis</tabstop>
+  <tabstop>bt_cadastrar_func</tabstop>
+  <tabstop>bt_voltar_func</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

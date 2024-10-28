@@ -1,0 +1,20 @@
+Cor base:  rgb(107, 179, 255);
+
+import sys
+from PyQt5 import uic, QtWidgets, QtCore, QtGui
+from PyQt5.QtWidgets import QFileDialog, QApplication, QWidget, QPushButton, QTableWidget, QErrorMessage, QTimeEdit
+from PyQt5.QtCore import QTimer, QTime
+from sqlite3 import Cursor
+from PyQt5.uic import loadUi
+import mysql
+import mysql.connector
+from mysql.connector import Error
+import mysql.connector
+from tkinter import *
+from PyQt5.QtWidgets import QApplication, QMainWindow
+from PyQt5.QtCore import QTimer
+from datetime import datetime
+import time
+from datetime import datetime
+import threading
+import PyInstaller.__main__
